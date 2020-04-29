@@ -1,0 +1,23 @@
+machine:
+  pre:
+    - curl -sSL https://s3.amazonaws.com/circle-downloads/install-circleci-docker.sh | bash -s -- 1.10.0
+    - pip install --upgrade pip
+    - pip install docker-compose
+
+  services:
+    - docker
+    - redis
+
+test:
+  post:
+    - docker build --rm=false -t zurfyx/nyao:$CIRCLE_SHA1 -t zurfyx/nyao:latest .
+    - docker-compose run web npm test
+
+deployment:
+  latest:
+    branch: master
+    commands:
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - docker push zurfyx/nyao:$CIRCLE_SHA1
+      - docker push zurfyx/nyao:latest
+      - scripts/deploy.sh

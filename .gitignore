@@ -1,0 +1,28 @@
+# Config files.
+config/*
+!config/default.js
+!config/test.js
+
+# Public (distribution).
+public/*bundle.js
+
+# DBs.
+data/
+data-session/
+*.rdb
+
+# Node.
+npm-debug.log
+coverage/
+node_modules/
+
+# Logs.
+*.log
+
+# IDEs.
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
