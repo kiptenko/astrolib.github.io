@@ -1,15 +1,15 @@
 {
-  "name": "nyao",
+  "name": "Zhenyka",
   "description": "The open-source chat application for developers.",
   "author": {
-    "name": "Gerard Rovira Sánchez",
-    "email": "zurfyx@gmail.com",
-    "url": "zurfyx.com"
+    "name": "Zheenykaa",
+    "email": "14hidra88@gmail.com",
+    "url": ""
   },
   "version": "0.9.0-alpha",
-  "repository": "https://github.com/zurfyx/nyao",
+  "repository": "https://github.com/kiptenko/astrolib.github.io.git",
   "keywords": [
-    "nyao",
+    "Bingo",
     "chat",
     "real time",
     "developers",
