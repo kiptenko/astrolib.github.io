@@ -100,7 +100,7 @@
     "http": "0.0.0",
     "ip-range-check": "0.0.2",
     "isomorphic-fetch": "^2.2.1",
-    "marked": "^0.3.6",
+    "marked": "^4.0.10",
     "mongoose": "^4.7.8",
     "morgan": "^1.7.0",
     "passport": "^0.3.2",
